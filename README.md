@@ -1,4 +1,9 @@
-# Reddit ALTcointip bot
+# Reddit FUNKTip bot
+
+## Changes from altcointip bot
+
+* Removed all coins, and added FUNK
+* Added FUNK exchange to list - the only exchange available currently requires authentication, so fill out your [CryptoRush](http://cryptorush.in) API details into src/conf/exchanges.yml
 
 ## Introduction
 
