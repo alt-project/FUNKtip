@@ -1,5 +1,5 @@
 # Bitcoin
-fnk:
+funk:
     enabled: true
     unit: funk
     name: Cypherfunk
@@ -19,5 +19,5 @@ fnk:
         transaction: 'http://cypherfunks.tuxhosting.de/chain/TheCypherfunks/tx/'
     regex:
         address: '(C[1-9a-z]{20,40})'
-        units: '(funk|funks|cypherfunk|cypherfunks|C)'
+        units: '(funk|funks|cypherfunk|cypherfunks|F)'
 

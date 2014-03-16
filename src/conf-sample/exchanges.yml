@@ -112,8 +112,8 @@ cryptorush:
     enabled: true
     domain: 'cryptorush.in'
     https: true
-    urlpaths: ['api.php?get=marketv2&m={THING_FROM}&b={THING_TO}&key=YOUR_CRYPTORUSH_API_KEY&id=YOURCRYPTORUSHUSERNAME']
+    urlpaths: ['api.php?get=marketv2&json=true&m={THING_FROM}&b={THING_TO}&key=YOUR_CRYPTORUSH_API_KEY&id=YOUR_CRYPTORUSH_USER_ID']
     jsonpaths: []
-    coinlist: ['btc','fnk']
+    coinlist: ['btc','funk']
     fiatlist: []
     uppercase: false
