@@ -35,6 +35,6 @@ nosetests.xml
 .pydevproject
 
 # cointipbot
+conf
 *.log*
 pifkoin
-conf

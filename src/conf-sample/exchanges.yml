@@ -107,3 +107,13 @@ cryptocoincharts:
     coinlist: ['btc','ltc','ppc','nmc','xmp','mec','bqc','dgc','ifc','ixc','mnc','qrk','sbc','zet','doge','nxt','msc','ftc','nvc','dvc','frc','trc']
     fiatlist: ['usd','eur']
     uppercase: false
+
+cryptorush:
+    enabled: true
+    domain: 'cryptorush.in'
+    https: true
+    urlpaths: ['api.php?get=marketv2&m={THING_FROM}&b={THING_TO}&key=YOUR_CRYPTORUSH_API_KEY&id=YOURCRYPTORUSHUSERNAME']
+    jsonpaths: []
+    coinlist: ['btc','fnk']
+    fiatlist: []
+    uppercase: false
