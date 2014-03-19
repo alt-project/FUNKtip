@@ -87,15 +87,17 @@ class CtbExchange(object):
                     myurlpath = myurlpath.replace(t, toreplace[t])
                     myjsonpath = myjsonpath.replace(t, toreplace[t])
 
+                opener = urllib2.build_opener()
+                opener.addheaders = [('User-agent', 'Mozilla/5.0')]
                 try:
                     lg.debug("CtbExchange::get_ticker_value(%s, %s, %s): calling %s to get %s...", self.conf.domain, _name1, _name2, myurlpath, myjsonpath)
                     if self.conf.https:
-                        connection = httplib.HTTPSConnection(self.conf.domain, timeout=5)
-                        connection.request("GET", myurlpath, {}, {})
+                        proto='https'
                     else:
-                        connection = httplib.HTTPConnection(self.conf.domain, timeout=5)
-                        connection.request("GET", myurlpath)
-                    response = json.loads(connection.getresponse().read())
+                        proto='http'
+
+                    result = opener.open(proto + '://' + self.conf.domain + '/' + myurlpath)
+                    result = json.loads(result.read())
                     result = xpath_get(response, myjsonpath)
                     lg.debug("CtbExchange::get_ticker_value(%s, %s, %s): result: %.6f", self.conf.domain, _name1, _name2, float(result))
                     results.append( float(result) )
