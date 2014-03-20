@@ -1,4 +1,4 @@
-# Reddit FUNKTip bot
+# Cypherfunk FUNKTip bot
 
 ## Changes from altcointip bot
 
